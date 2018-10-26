@@ -5,7 +5,7 @@ def readme():
     with open('README.rst') as f:
         return f.read()
 
-setup(  name='bnGetRepos',
+setup(  name='bnGetGitRepos',
         version='0.1.0b0',
         description=' Download git repositories from a cloud Git service',
         packages=find_packages('src'),
