@@ -1,7 +1,7 @@
 Download Git Repositories
 =========================
 
-**get-git-repositories** is a python package which syncronizes git repositories from any Git cloud service. 
+**get-git-repositories** is a python package which synchronizes git repositories from any Git cloud service. 
 
 **bnGetGitRepos** 
 ------------------
