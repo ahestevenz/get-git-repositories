@@ -51,7 +51,11 @@ class bnGetGitRepos(object):
             if (self.reset_repos): 
                 logging.info(('Resetting repository: %s')%repo)
                 self.reset_repo(repo)
-            self.update_branches(repo)
+            try:
+                self.update_branches(repo)
+            except Exception as e:
+                logging.error(("Something went wrong with the following repository: %s . Please check! Error: %s ")%(repo,e))
+
     
     def load_info(self):
         with open(self.json_file) as f:
